@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+    background: linear-gradient(to right, rgb(73%, 18%, 24%),  rgb(131, 51, 91) 80%,  rgb(73%, 18%, 24%)100%);
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+.contianer{
+    
+    /* background: linear-gradient(to right, rgb(73%, 18%, 24%),  rgb(73%, 18%, 24%)100%); */
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.player1{
+    position: relative;
+            z-index: 1;
+    border: 2px ;
+    background-color: #DAAEBB;
+    width: 500px;
+    height: 600px;
+    text-align: center;
+}
+.player2{
+    position: relative;
+            z-index: 1;
+    border: 2px ;
+    background-color:  #B97A97;
+    width: 500px;
+    height: 600px;
+    text-align: center;
+    
+}
+ img{
+    position: absolute;
+    width: 150px;
+    height: 140px;
+    z-index: 3;
+    top: 255px;
+    left: 656px;
+}
+.dice{
+    border-radius: 4px ;
+    font-size: 1 rem;
+    position: absolute;
+    z-index: 4;
+    top: 500px
+}
+.reset{
+    border-radius: 4px ;
+    font-size: 1 rem;
+    position: absolute;
+    z-index: 4;
+    top: 100px
+
+}
+    </style>
+    <div class="contianer">
+
+        <div class="player1">
+            <h1>player 1</h1>
+            <div class="score">Current</div>
+            <div class="count">count</div>
+        </div>
+        <button class="reset" onclick="reset()">New Game</button>
+        <button class="dice" onclick="rollDice()"><img src="dice.ico" alt="">Roll Dice</button> 
+            
+        
+        <div class="img">
+            <img src="img" alt="">
+        </div>         
+        <div class="player2">
+            <h1>player2</h1>
+            <div class="score">Current</div>
+            <div class="count">count</div>
+            
+        </div>
+        </div>
+    </body>
+    <script src="script.js"></script>
+</body>
+</html>
